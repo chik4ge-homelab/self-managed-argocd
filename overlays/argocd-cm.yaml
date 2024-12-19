@@ -3,6 +3,8 @@ kind: ConfigMap
 metadata:
   name: argocd-cm
 data:
+  url: https://argocd.chik4ge.me
+  
   dex.config: |
     connectors:
       - type: github
