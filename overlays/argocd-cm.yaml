@@ -4,6 +4,7 @@ metadata:
   name: argocd-cm
 data:
   url: https://argocd.chik4ge.me
+  admin.enabled: "false"
   
   dex.config: |
     connectors:
