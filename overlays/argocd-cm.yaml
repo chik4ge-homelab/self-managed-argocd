@@ -13,3 +13,5 @@ data:
         config:
           clientID: Ov23liO6LEyYow0nlys8
           clientSecret: $dex.github.clientSecret
+          orgs:
+            - name: chik4ge-homelab
