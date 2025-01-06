@@ -3,7 +3,6 @@ kind: Kustomization
 
 resources:
   - github.com/argoproj/argo-cd//manifests/cluster-install?ref=stable
-  - ./cloudflared.yaml
 
 patches:
   - path: overlays/argocd-cmd-params-cm.yaml
