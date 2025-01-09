@@ -5,7 +5,7 @@ metadata:
 data:
   url: https://argocd.chik4ge.me
   admin.enabled: "false"
-  
+
   dex.config: |
     connectors:
       - type: github
@@ -16,7 +16,7 @@ data:
           clientSecret: $dex.github.clientSecret
           orgs:
             - name: chik4ge-homelab
-  
+
   resource.exclusions: |
     - apiGroups:
         - cilium.io
@@ -26,4 +26,9 @@ data:
         - "*"
 
   resource.compareoptions: |
-    ignoreResourceStatusField: crd
+    ignoreDifferences:
+    - group: apiextensions.k8s.io
+      kind: CustomResourceDefinition
+      name: innodbclusters.mysql.oracle.com
+      jsonPointers:
+        - /spec
