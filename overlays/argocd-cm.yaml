@@ -24,3 +24,6 @@ data:
         - CiliumIdentity
       clusters:
         - "*"
+
+  resource.compareoptions: |
+    ignoreResourceStatusField: crd
