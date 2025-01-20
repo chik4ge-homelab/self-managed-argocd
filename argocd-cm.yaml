@@ -13,7 +13,7 @@ data:
         name: GitHub
         config:
           clientID: Ov23liO6LEyYow0nlys8
-          clientSecret: $dex.github.clientSecret
+          clientSecret: $github-secret:token
           orgs:
             - name: chik4ge-homelab
 
